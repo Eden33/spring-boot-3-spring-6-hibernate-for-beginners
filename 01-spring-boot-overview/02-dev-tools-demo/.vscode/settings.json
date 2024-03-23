@@ -1,0 +1,4 @@
+{
+    "java.autobuild.enabled": true,
+    "boot-java.change-detection.on": true,
+}
