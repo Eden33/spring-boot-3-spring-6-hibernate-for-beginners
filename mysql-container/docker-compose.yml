@@ -1,0 +1,15 @@
+version: "3.6"
+services:
+ db:
+   build: .
+   container_name: spring-boot-course-mysql
+   volumes:
+     - spring-boot-course-mysql-volume:/var/lib/mysql   
+   environment:
+     - MYSQL_ROOT_PASSWORD=password
+   ports:
+     - "3306:3306"
+   restart: 'no'
+
+volumes:
+ spring-boot-course-mysql-volume:
